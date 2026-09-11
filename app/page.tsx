@@ -330,10 +330,10 @@ export default function ReviewFunnel() {
   const whatsappNumbers = ["9833433373", "8850595738"];
 
   const googleMobileLink =
-    "https://www.google.com/search?client=ms-android-vivo-terr1-rso2&hs=66GB&sca_esv=35cfe427b01f9ce2&biw=360&bih=774&sxsrf=APpeQnvNXgQdZt1GCUy3Ye2CS-qkGsizgw:1789062203143&q=al-iqra+mens+wear+mumbai+reviews&uds=AJ5uw1_PWAOUrb1BYoNTSzMlx8HiX9gxpIg-t-6J90TTFLhsf96e99qlIbzbf6FYHU3vFwu8C6sPCEGgRkZ7WH9FD7WYxhin-RJ5TyNM6R2CatCGij1IlownfEjT8-iWT7JTM8WArRSJL0z32UtFTRbItLpyz73afzbBl7DuC60X5FALqjBmp6C4ycGgQDIn4qduVUVEvQSK-zTQxAo7W5cW4GLxDzIMsGpzZGoKwHSbwegVbJu5IWJPr_9iXpw2lNa1VCsgmpjvvy9wjWJnmVWX6LVJWXWZxzZcimfCvYxitLloqQatUlvIIhh2t2BJcLTRlDOWIQwio9rYg9jG8PID3NvZJCd9nFyw-_RZUVdcwM57NHSzWbQ&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_27VL8ipW1mvjVJIGCPDnRGaSMPPC-fV4JHPAoRVWczN8s1VQS-uflPG8Pn1CnGzzyBN69nN8NxrwY_ZMfMOJFxzJhJKjPqHaT2eUWv0DtExj5GgQg%3D%3D&sa=X&ved=2ahUKEwjhr-WIyOSWAxWUdfUHHW2UOfEQk8gLegQIGRAB&ictx=1#ebo=2";
+    "https://www.google.com/search?client=ms-android-vivo-terr1-rso2&hs=hiwV&sca_esv=a32034c9d82639b0&sxsrf=APpeQnucYfW3MpL2_yXrZSUWNx_0v9-bcA:1789125298666&q=al+iqra+mumbai+reviews&uds=AJ5uw18V_w9r9H4utUm7xnn6aMZvpQQZhKTxtOk1sGuRAc0AJphNH_pzAlIzeUegmo3Uq52LZO1xOqjbZvpsrCTRg_-dsGgP8H7-c1GPOc4TPiPtDCjYX53IHfNeIpYiaLakNQNDOZ0vlZduRe8zRZLX9FccgZNpX3Epe1aruPn4LvhJ0zRaXdQhTX5opAmNfB8Xx7Ze3slxES8s4YdkXq_Ne6EbE7iZh7lAGhbwKnDNFrwtC0-XXtTP-0tfId6M5f2faU0bRqX-mxVaZ71vYU0vqes5wIIzjHp5z2-czIEAe85rMF3OPbZId-4k9-w7YjCB3FP6Z3gT8RuB0Tj0JAzkllfWIseBlL5ZyJMaeQia_yAuzoZSHhTk9gNW2q1CLQ3hoMosmXeW&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_5o4XdtZ7-ZkYAVnpy2LpFGDoQAhCl4MU0qnpqF4GPEph9YuCp3oSfHOX9qWgosho7fYQV_J5eY2WdYEignTpcvdIIE-&sa=X&ved=2ahUKEwjny4qPs-aWAxUsleEIHXZKL-sQk8gLegQIGBAB&ictx=1&stq=1&cs=1&lei=suKjaueqKKyqhvcP9pS92Q4#ebo=2";
 
   const googleDesktopLink =
-    "https://www.google.com/search?q=al+iqraa+mens+wear&oq=al+iqraa+mens+wear&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB7SAQg0NTM4ajBqN6gCCLACAfEFuzayWajLvZg&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3be7b75a532299f7:0xc33c25fbfa1fb8e0,3";
+    "https://www.google.com/search?q=al+iqra+jogeshwari&oq=al+iqra+jog&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyEAgBEC4YrwEYxwEYgAQYjgUyBggCEEUYOTIICAMQABgWGB4yDQgEEAAYhgMYgAQYigXSAQgzMTI1ajBqN6gCCLACAfEF8DH5tuUFmLk&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3be7b7dcf8f4c433:0xa5a9d8f5fd275df7,3";
 
   // Shuffle reviews and pick only a random 10 on component mount / page refresh
   useEffect(() => {
