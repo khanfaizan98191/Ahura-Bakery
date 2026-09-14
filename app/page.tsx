@@ -94,7 +94,7 @@ export default function ReviewFunnel() {
         showPopup(
           "success",
           "Review Copied! 📋",
-          "Please PASTE the copied text in the Google review box.",
+          "Just PASTE the copied text in the Google review box.",
           () => {
             const isMobile = /iPhone|iPad|iPod|Android/i.test(
               navigator.userAgent,
@@ -160,7 +160,7 @@ export default function ReviewFunnel() {
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
               {popup.title}
             </h3>
-            <p className="text-gray-600 mb-6 text-[14px] sm:text-base font-medium">
+            <p className="text-gray-600 mb-6 text-[16px] sm:text-base font-medium">
               {popup.message}
             </p>
 
