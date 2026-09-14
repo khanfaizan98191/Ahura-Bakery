@@ -117,7 +117,7 @@ export default function ReviewFunnel() {
   };
 
   return (
-    <div className="min-h-screen bg-[#800b0b] flex flex-col items-center p-4 sm:p-6 font-sans relative">
+    <div className="min-h-screen bg-[#F8F3EA] flex flex-col items-center p-4 sm:p-6 font-sans relative">
       {popup.isOpen && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/65 backdrop-blur-sm transition-opacity">
           <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-sm w-full shadow-2xl transform scale-100 transition-transform flex flex-col items-center text-center animate-in zoom-in-95 duration-200">
@@ -200,7 +200,7 @@ export default function ReviewFunnel() {
       />
 
       <div className="lg:mt-6 w-full sm:mt-10 flex flex-col items-center text-center justify-center gap-3">
-        <div className="relative w-48 sm:w-64 h-14 sm:h-20 shadow-md border-2 border-[#EDE8D0] bg-[#F8F3EA] rounded-xl overflow-hidden flex items-center justify-center p-2 shrink-0">
+        <div className="relative w-48 sm:w-64 h-14 sm:h-20 shadow-md border-2 border-[#EDE8D0] bg-white rounded-xl overflow-hidden flex items-center justify-center p-2 shrink-0">
           <Image
             src="/ahura.png"
             alt="Ahura bakery"
@@ -212,7 +212,7 @@ export default function ReviewFunnel() {
         </div>
       </div>
 
-      <div className="bg-[#F8F3EA] w-full max-w-md sm:max-w-4xl mt-6 lg:mt-8 rounded-2xl shadow-xl p-6 sm:p-8">
+      <div className="bg-white w-full max-w-md sm:max-w-4xl mt-6 lg:mt-8 rounded-2xl shadow-xl p-6 sm:p-8">
         <h2 className="text-xl sm:text-2xl font-bold text-center text-[#800b0b] mb-4 lg:mb-6">
           Rate Your Experience
         </h2>
@@ -262,7 +262,7 @@ export default function ReviewFunnel() {
             <p className="text-sm sm:text-base font-bold text-[#800b0b] mb-3">
               Select a review to copy:
             </p>
-            <div className="flex flex-col gap-2.5 max-h-[280px] sm:max-h-[460px] overflow-y-auto pt-2 px-2 custom-scrollbar">
+            <div className="flex flex-col gap-2.5 max-h-[320px] sm:max-h-[460px] overflow-y-auto pt-2 px-2 custom-scrollbar">
               {reviewsList.map((text, index) => (
                 <button
                   key={index}
