@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { aliqrareview } from "./reviews";
+import { ahurareviews } from "./reviews";
 
 export default function ReviewFunnel() {
   const [rating, setRating] = useState(0);
@@ -33,7 +33,7 @@ export default function ReviewFunnel() {
 
   // Shuffle reviews and pick only a random 10 on component mount / page refresh
   useEffect(() => {
-    const shuffled = [...aliqrareview].sort(() => Math.random() - 0.5);
+    const shuffled = [...ahurareviews].sort(() => Math.random() - 0.5);
     setReviewsList(shuffled.slice(0, 10));
   }, []);
 
@@ -203,7 +203,7 @@ export default function ReviewFunnel() {
         <div className="relative w-48 sm:w-64 h-14 sm:h-20 shadow-md border-2 border-[#EDE8D0] bg-[#F8F3EA] rounded-xl overflow-hidden flex items-center justify-center p-2 shrink-0">
           <Image
             src="/ahura.png"
-            alt="Al Iqra Designer & Bridell Dress"
+            alt="Ahura bakery"
             fill
             sizes="(max-width: 768px) 192px, 256px"
             style={{ objectFit: "contain" }}
