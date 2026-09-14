@@ -1,4 +1,4 @@
-const ahurareviews = [
+export const ahurareviews = [
   "The chicken puff was fresh, flaky, and full of flavour. A lovely bakery snack.",
   "Really enjoyed the mutton keema petis. The filling was tasty and nicely seasoned.",
   "Chicken tandoori roll was satisfying and packed with flavour. Would try it again.",
