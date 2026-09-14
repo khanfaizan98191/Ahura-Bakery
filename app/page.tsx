@@ -94,7 +94,7 @@ export default function ReviewFunnel() {
         showPopup(
           "success",
           "Review Copied! 📋",
-          "Just PASTE the copied text in the Google review box.",
+          "Just PASTE on the Google review box.",
           () => {
             const isMobile = /iPhone|iPad|iPod|Android/i.test(
               navigator.userAgent,
