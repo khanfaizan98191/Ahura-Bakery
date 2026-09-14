@@ -168,7 +168,7 @@ export default function ReviewFunnel() {
               onClick={closePopup}
               className={`w-full py-3.5 rounded-xl font-bold text-sm sm:text-base transition-colors uppercase tracking-wide ${
                 popup.type === "success"
-                  ? "bg-[#800b0b] text-[#EDE8D0] hover:bg-[#dcd7c1]"
+                  ? "bg-[#800b0b] text-[#EDE8D0] hover:bg-[#680f0f]"
                   : "bg-[#111827] text-white hover:bg-gray-800"
               }`}
             >
