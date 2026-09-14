@@ -287,7 +287,7 @@ export default function ReviewFunnel() {
             rating === 0
               ? "bg-gray-200 text-gray-400 cursor-not-allowed"
               : rating <= 3
-                ? "bg-[#111827] text-[#EDE8D0] hover:bg-gray-800"
+                ? "bg-[#111827] text-[#800b0b] hover:bg-gray-800"
                 : "bg-[#800b0b] text-[#EDE8D0] hover:bg-[#5c1111]"
           }`}
         >
