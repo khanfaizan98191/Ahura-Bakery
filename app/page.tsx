@@ -285,9 +285,9 @@ export default function ReviewFunnel() {
           disabled={rating === 0}
           className={`w-full py-3.5 sm:py-4 rounded-xl font-bold text-[15px] sm:text-lg shadow-md transition-all uppercase tracking-wide ${
             rating === 0
-              ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+              ? "bg-gray-200 text-[#800b0b] cursor-not-allowed"
               : rating <= 3
-                ? "bg-[#111827] text-[#800b0b] hover:bg-gray-800"
+                ? "bg-[#111827] text-[#EDE8D0] hover:bg-gray-800"
                 : "bg-[#800b0b] text-[#EDE8D0] hover:bg-[#5c1111]"
           }`}
         >
