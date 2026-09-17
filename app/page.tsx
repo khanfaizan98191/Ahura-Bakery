@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ahurareviews } from "./reviews";
+import mukhisBakeryReviews from "./reviews";
 
 export default function ReviewFunnel() {
   const [rating, setRating] = useState(0);
@@ -26,14 +26,14 @@ export default function ReviewFunnel() {
   const whatsappNumbers = ["9619129268"];
 
   const googleMobileLink =
-    "https://www.google.com/search?q=ahura+bakery+reviews&oq=ahura+bakery+rev&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhge0gEINTcxMmowajeoAhSwAgHxBXTik-xmRghi8QV04pPsZkYIYg&client=ms-android-oneplus-rvo3&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#ebo=2";
+    "https://www.google.com/search?q=mukhis+cakes+reviews&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyEggFECMYJxjqAhjwBRieBhiiBzIJCAYQIxgnGOoCMgkIBxAjGCcY6gIyCQgIECMYJxjqAjIJCAkQIxgnGOoCMgkIChAjGCcY6gIyEggLEC4YJxivARjHARi6AhjqAjIJCAwQIxgnGOoCMhIIDRAuGCcYrwEYxwEYugIY6gIyCQgOECMYJxjqAjIRCA8QABgDGEIYjwEYtAIY6gIyEQgQEAAYAxhCGI8BGLQCGOoCMhEIERAAGAMYQhiPARi0AhjqAjIRCBIQABgDGEIYjwEYtAIY6gIyEQgTEAAYAxhCGI8BGLQCGOoC0gEGLTFqMGo3qAIUsAIB8QViA0YtXlGd3PEFYgNGLV5RndzxBWIDRi1eUZ3c&client=ms-android-vivo-terr1-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#ebo=2";
 
   const googleDesktopLink =
-    "https://www.google.com/search?sca_esv=2d0686cf1d3721e9&rlz=1C1CHBF_enIN1142IN1142&sxsrf=APpeQnsHzGHG4flJhPdq9zrKfLeZ-6axKg:1789364257591&si=APenkKn5T4YN59srr511wD6k6Pufj9DEzRUvB1XJSwUeeT5aftiF_k0UnL2ATHVcv1fbUcepgmGVHLrNIO_1CUKN4vNHwkOsrnO74BB7VgyNwwZWLiQs5MK4N1nvTz5gU_Ml7Jtkf10ffS8D_B9pU9XCHuv-oW8E0A%3D%3D&q=Ahura+Bakery+%26+Stores+Reviews&sa=X&ved=2ahUKEwis7cmnre2WAxXukeEIHS2LLDQQ0bkNegQIOxAF&biw=1707&bih=811&dpr=1.13#lrd=0x3be7c9d17c9e3217:0xecb2015b19b80be8,3,,,,";
+    "https://www.google.com/search?q=reviews+mukhis+bakery&shoprs=GBIqDW11a2hpcyBiYWtlcnkyCwgSEgdSZXZpZXdzYAE&sa=X&ved=2ahUKEwjg--WuhvWWAxVFk-EIHaD-LGkQip4GKAN6BAgtEDk#lrd=0x3be7b75972e5c32f:0x4b0bb930c492fa9b,3,,,,";
 
   // Shuffle reviews and pick only a random 10 on component mount / page refresh
   useEffect(() => {
-    const shuffled = [...ahurareviews].sort(() => Math.random() - 0.5);
+    const shuffled = [...mukhisBakeryReviews].sort(() => Math.random() - 0.5);
     setReviewsList(shuffled.slice(0, 10));
   }, []);
 
@@ -117,7 +117,7 @@ export default function ReviewFunnel() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8F3EA] flex flex-col items-center p-4 sm:p-6 font-sans relative">
+    <div className="min-h-screen bg-background flex flex-col items-center p-4 sm:p-6 font-sans relative">
       {popup.isOpen && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/65 backdrop-blur-sm transition-opacity">
           <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-sm w-full shadow-2xl transform scale-100 transition-transform flex flex-col items-center text-center animate-in zoom-in-95 duration-200">
@@ -168,7 +168,7 @@ export default function ReviewFunnel() {
               onClick={closePopup}
               className={`w-full py-3.5 rounded-xl font-bold text-sm sm:text-base transition-colors uppercase tracking-wide ${
                 popup.type === "success"
-                  ? "bg-[#800b0b] text-[#EDE8D0] hover:bg-[#680f0f]"
+                  ? "bg-[#8f5454] text-[#EDE8D0] hover:bg-[#8f5454]/80"
                   : "bg-[#111827] text-white hover:bg-gray-800"
               }`}
             >
@@ -189,21 +189,22 @@ export default function ReviewFunnel() {
           border-radius: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #A83232; 
+          background: #8f5454; 
           border-radius: 8px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #800b0b; 
+          background: #8f5454; 
         }
       `,
         }}
       />
 
       <div className="lg:mt-6 w-full sm:mt-10 flex flex-col items-center text-center justify-center gap-3">
-        <div className="relative w-48 sm:w-64 h-14 sm:h-20 shadow-md border-2 border-[#EDE8D0] bg-white rounded-xl overflow-hidden flex items-center justify-center p-2 shrink-0">
+        <div className="relative w-30 sm:w-40 h-20 sm:h-34 shadow-md border-2 border-[#EDE8D0] bg-white rounded-xl overflow-hidden flex items-center justify-center p-2 shrink-0">
           <Image
-            src="/ahura.png"
-            alt="Ahura bakery"
+            className="scale-105 pb-2!"
+            src="/M-logo.png"
+            alt="Mukhi's bakery"
             fill
             sizes="(max-width: 768px) 192px, 256px"
             style={{ objectFit: "contain" }}
@@ -212,8 +213,8 @@ export default function ReviewFunnel() {
         </div>
       </div>
 
-      <div className="bg-white w-full max-w-md sm:max-w-4xl mt-6 lg:mt-8 rounded-2xl shadow-xl p-6 sm:p-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-center text-[#800b0b] mb-4 lg:mb-6">
+      <div className="bg-[var(--form-background)] w-full max-w-md sm:max-w-4xl mt-6 lg:mt-8 rounded-2xl shadow-xl p-6 sm:p-8">
+        <h2 className="text-xl sm:text-2xl font-bold text-center text-[#8f5454] mb-4 lg:mb-6">
           Rate Your Experience
         </h2>
 
@@ -228,7 +229,7 @@ export default function ReviewFunnel() {
               className="focus:outline-none transition-transform active:scale-90"
             >
               <svg
-                className={`w-12 h-12 sm:w-14 sm:h-14 transition-colors duration-300 ${rating >= star ? "text-[#b13434]" : "text-gray-200"}`}
+                className={`w-12 h-12 sm:w-14 sm:h-14 transition-colors duration-300 ${rating >= star ? "text-[var(--background)]" : "text-gray-200"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -288,7 +289,7 @@ export default function ReviewFunnel() {
               ? "bg-gray-200 text-[#800b0b] cursor-not-allowed"
               : rating <= 3
                 ? "bg-[#111827] text-[#EDE8D0] hover:bg-gray-800"
-                : "bg-[#800b0b] text-[#EDE8D0] hover:bg-[#5c1111]"
+                : "bg-[#8f5454] text-[#fdfcfc] hover:bg-[#8f5454]/80"
           }`}
         >
           {rating === 0
